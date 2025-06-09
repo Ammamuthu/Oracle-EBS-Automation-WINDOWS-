@@ -154,12 +154,9 @@ def main():
     print(f"Found {len(db_connections)} DB connections to process.")
     
 
-    # db_user = input("Enter Oracle DB username: ")
-    # db_pass = getpass.getpass("Enter Oracle DB password: ")
+    db_user = input("Enter Oracle DB username: ")
+    db_pass = getpass.getpass("Enter Oracle DB password: ")
 
-    # Hardcoded credentials (you can change to input if you want)
-    db_user = "sys as sysdba"
-    db_pass = "Ebslabs123"
 
     collected_data = []
     for db in db_connections:
